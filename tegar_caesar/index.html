@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="tkjj.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-image: url('Last Land.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: rgb(233, 230, 229);
+        }
+
+        .container {
+            max-width: 400px;
+            background-color: #161616;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(255, 253, 252);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(73, 185, 249);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(73, 185, 249);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Caesar Encryption and Decryption</h2>
+        <form method="post" action="enkripsi2.php">
+            <label for="text">Masukan Text:</label>
+            <input type="text" id="text" name="text" required>
+            <label for="shift">Selisih:</label>
+            <input type="number" id="shift" name="shift" required>
+            <label for="action">Encrypt or Decrypt:</label>
+            <select id="action" name="action">
+                <option value="encrypt">Encrypt</option>
+                <option value="decrypt">Decrypt</option>
+            </select>
+            <input type="submit" name="submit" value="Hasil">
+        </form>
+    </div>
+</body>
+</html>
